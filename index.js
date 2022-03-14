@@ -11,7 +11,8 @@ app.get("/:nome/:lang", (req, res) => {
         nome: req.params.nome,
         lang: req.params.lang,
         empresa: "Guia do programador",
-        inscritos: 8000
+        inscritos: 8000,
+        msg: false
     });
 });
 
