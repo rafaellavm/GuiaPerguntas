@@ -29,10 +29,16 @@
     <% if (msg) {%>
         <h3>Isso é uma mensagem de erro!!</h3>
         <% } else { %>
+
             <h3>Nenhum erro!</h3>
             <% } %>
 
+                <% produtos.forEach(function(produto){ %>
+                    <hr>
+                    <%= produto.nome %> <br>
 
+                        <%= produto.preco %>
+                            <% }) %>
 
 
 </body>
